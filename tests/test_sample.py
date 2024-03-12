@@ -1,27 +1,28 @@
-def convert_to_roman_numeral(number):
-    if number == 1000:
-        return 'M'
-    elif number == 1001:
-        return 'MI'
-    elif number == 1004:
-        return 'MIV'
-    else:
-        return 'MXIV'
-    
 
-def test_convert_1000_into_roman_numeral():
-    assert convert_to_roman_numeral(1000) == 'M'
-
-
-def test_convert_1001_into_roman_numeral():
-    assert convert_to_roman_numeral(1001) == 'MI'
-
-def test_convert_1004_into_roman_numeral():
-    assert convert_to_roman_numeral(1004) == 'MIV'
-
-def test_convert_1014_into_roman_numeral():
-    assert convert_to_roman_numeral(1014) == 'MXIV'
+roman_numerals = {
+        0 : '',
+        1 : 'I',
+        2 : 'II',
+        3 : 'III',
+        4 : 'IV',
+        5 : 'V',
+        6 : 'VI',
+        7 : 'VII',
+        8 : 'VIII',
+        9 : 'IX',
+        10 : 'X',
+        50 : 'L',
+        100 : 'C',
+        500 : 'D',
+        1000 : 'M'
+    }
 
 
 
 
+
+
+
+
+def test_1_equals_I():
+    assert get_roman_numeral(1) == 'I'
