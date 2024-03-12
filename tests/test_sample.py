@@ -18,8 +18,8 @@ roman_numerals = {
     }
 
 
-def get_number_place_value():
-    return ''
+def get_number_place_value(num):
+    return 1
     
 
 
