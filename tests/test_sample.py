@@ -19,7 +19,9 @@ roman_numerals = {
 
 
 def get_number_place_value(num):
-    return 1
+    if len(num) <2:
+        return roman_numerals[num]
+
 
 
 
