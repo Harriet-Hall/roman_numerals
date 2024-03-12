@@ -22,11 +22,8 @@ roman_numerals = {
 def get_roman_numeral(num):
     return roman_numerals[num]
 
-
-
-
 def test_1_equals_I():
-    for i in range(roman_numerals):
-        assert get_roman_numeral(i) == get_roman_numeral[i]
+    for i in range(1,11):
+        assert get_roman_numeral(i) == roman_numerals[i]
 
 
