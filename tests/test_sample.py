@@ -19,8 +19,12 @@ roman_numerals = {
 
 
 def get_number_place_value(num):
-    if len(num) <2:
-        return roman_numerals[num]
+    split_into_digits = (str(num)).split('')
+    print(split_into_digits)
+   
+       
+     
+
 
 
 
