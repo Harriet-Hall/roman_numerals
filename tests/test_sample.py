@@ -20,7 +20,7 @@ roman_numerals = {
 
 def get_number_place_value(num):
     return 1
-    
+
 
 
 def get_roman_numeral(num):
@@ -34,5 +34,11 @@ def test_num_equals_roman_numerals_i():
 
 def test_single_digit_equals_1():
     assert get_number_place_value(1) == 1
+
+
+def test_double_digit_equals_2():
+    assert get_number_place_value(30) == [3,0]
+    
+
 
 
