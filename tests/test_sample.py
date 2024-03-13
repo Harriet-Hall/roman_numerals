@@ -19,9 +19,8 @@ roman_numerals = {
 
 
 def get_number_place_value(num):
-    each_digit = list(str(num))
-    for i in each_digit:
-        print(i)
+    return list(str(num))
+   
    
        
      
