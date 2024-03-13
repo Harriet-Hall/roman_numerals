@@ -41,7 +41,6 @@ def test_num_equals_roman_numerals_i():
     for i in range(1,11):
         assert get_roman_numeral(i) == roman_numerals[i]
 
-
 def test_double_digit_equals_30():
     assert get_number_place_value(30) == ['3','0']
 
