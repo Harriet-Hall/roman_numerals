@@ -42,8 +42,12 @@ def test_num_equals_roman_numerals_i():
         assert get_roman_numeral(i) == roman_numerals[i]
 
 
-def test_double_digit_equals_2():
+def test_double_digit_equals_30():
     assert get_number_place_value(30) == ['3','0']
+
+def test_triple_digit_equals_400():
+     assert get_number_place_value(400) == ['4','0','0']
+
     
 
 
