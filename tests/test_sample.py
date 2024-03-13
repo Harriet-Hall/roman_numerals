@@ -22,11 +22,6 @@ def get_number_place_value(num):
     return list(str(num))
    
    
-       
-     
-
-
-
 
 
 def get_roman_numeral(num):
@@ -49,6 +44,9 @@ def test_triple_digit_equals_400():
 
 def test_quadruple_digit_equals_5678():
      assert get_number_place_value(5678) == ['5','6','7','8']
+
+def test_20_equals_XX():
+    assert get_roman_numeral(20) == 'XX'
     
 
 
