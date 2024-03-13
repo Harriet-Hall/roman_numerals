@@ -28,7 +28,10 @@ def get_roman_numeral(num):
    if num <= 10:
         return roman_numerals[num]
    else:
-        return get_number_place_value(num)
+        num_list = get_number_place_value(num)
+        for i in num_list:
+            return 'X' * int(i)
+
 
 
 
