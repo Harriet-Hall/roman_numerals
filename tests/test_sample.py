@@ -57,5 +57,9 @@ def test_30_equals_XXX():
 def test_11_equals_XI():
     assert get_roman_numeral(11) == 'XI'
 
+def test_19_equals_XIX():
+    assert get_roman_numeral(19) == 'XIX'
+
+
 
 
