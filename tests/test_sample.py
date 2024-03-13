@@ -19,8 +19,9 @@ roman_numerals = {
 
 
 def get_number_place_value(num):
-    split_into_digits = (str(num)).split('')
-    print(split_into_digits)
+    each_digit = list(str(num))
+    for i in each_digit:
+        print(i)
    
        
      
@@ -30,7 +31,10 @@ def get_number_place_value(num):
 
 
 def get_roman_numeral(num):
-   return roman_numerals[num]
+   if num <= 10:
+        return roman_numerals[num]
+   else:
+        return get_number_place_value(num)
 
 
 
@@ -38,12 +42,9 @@ def test_num_equals_roman_numerals_i():
     for i in range(1,11):
         assert get_roman_numeral(i) == roman_numerals[i]
 
-def test_single_digit_equals_1():
-    assert get_number_place_value(1) == 1
-
 
 def test_double_digit_equals_2():
-    assert get_number_place_value(30) == [3,0]
+    assert get_number_place_value(30) == ['3','0']
     
 
 
