@@ -29,8 +29,8 @@ def get_roman_numeral(num):
         return roman_numerals[num]
    else:
         num_list = get_number_place_value(num)
-        for i in num_list:
-            return 'X' * int(i)
+       
+        return 'X' * int(num_list[0]) + roman_numerals[int(num_list[1])]
 
 
 
