@@ -50,7 +50,9 @@ def test_quadruple_digit_equals_5678():
 
 def test_20_equals_XX():
     assert get_roman_numeral(20) == 'XX'
-    
+
+def test_30_equals_XXX():
+    assert get_roman_numeral(30) == 'XXX'
 
 
 
