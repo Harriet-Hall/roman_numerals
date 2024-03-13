@@ -48,6 +48,8 @@ def test_double_digit_equals_30():
 def test_triple_digit_equals_400():
      assert get_number_place_value(400) == ['4','0','0']
 
+def test_quadruple_digit_equals_5678():
+     assert get_number_place_value(5678) == ['5','6','7','8']
     
 
 
